@@ -93,10 +93,11 @@ erDiagram
     TRANSACTIONS ||--o{ WALLET_MUTATIONS : produces
 
     WALLETS ||--o{ TOPUP_REQUESTS : requests
-```
+
 
     PAYMENT_METHODS ||--o{ TOPUP_REQUESTS : used_for
 
     TRANSACTIONS ||--o| TOPUP_REQUESTS : topup_detail
 
     TRANSACTIONS |o--o{ AUDIT_LOGS : referenced_by
+```
