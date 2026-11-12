@@ -1,4 +1,4 @@
-
+```mermaid
 erDiagram
     USERS {
         BIGINT Id PK
@@ -93,6 +93,7 @@ erDiagram
     TRANSACTIONS ||--o{ WALLET_MUTATIONS : produces
 
     WALLETS ||--o{ TOPUP_REQUESTS : requests
+```
 
     PAYMENT_METHODS ||--o{ TOPUP_REQUESTS : used_for
 
